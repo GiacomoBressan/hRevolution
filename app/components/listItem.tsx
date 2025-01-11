@@ -7,11 +7,11 @@ interface ListItemProps {
 
 export default function ListItem({ icon, text }: ListItemProps) {
     return (
-        <li className="flex items-center space-x-2">
-            <div className="w-6 h-6 flex-shrink-0 mr-2">
+        <li className="flex items-center space-x-2 p-1">
+            <div className="w-10 h-10 flex-shrink-0 mr-2">
                 {icon}
             </div>
-            <span>{text}</span>
+            <span className='text-[23px]'>{text}</span>
         </li>
     );
 }

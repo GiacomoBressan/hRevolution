@@ -5,11 +5,12 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 import { FaFaceSmileBeam } from "react-icons/fa6";
 import { MdSavings } from "react-icons/md";
 import ListItem from './listItem';
+import Card from './card';
 
 export default function Header() {
     return (
         <div className="w-full h-[600px] bg-white flex">
-            <div className="w-full bg-vibranium flex items-center">  
+            <div className="w-full bg-vibranium flex items-center p-2">  
                 <ul className="flex flex-col space-y-4 p-8 text-customGray text-2xl font-bold">
                     <ListItem icon={<FaArrowTrendUp />} text="Strutturare il Successo: Organigrammi, Mansionari e Procedure" />
                     <ListItem icon={<FaSuitcase />} text="Strategie per un Onboarding e Offboarding Efficace" />
@@ -22,7 +23,13 @@ export default function Header() {
             <div className="w-full bg-white overflow-hidden">
                 <img src="/images/businnessCouple.png" alt="Description" className="max-w-full h-auto" />
             </div>
-            <div className="w-full bg-vibranium">
+            <div className="w-full bg-vibranium flex flex-col items-center">
+                <div className='h-[50%] pt-4'>
+                <Card imageSrc="/images/businnessmanIcon.png" text="40 Hours Training" />
+                </div>
+                <div className='h-[50%] pt-4'>
+                <Card imageSrc="/images/class.png" text="10 Practical Sessions" />
+                </div>
             </div>
         </div>
     );
