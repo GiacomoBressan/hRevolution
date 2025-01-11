@@ -15,7 +15,7 @@ export default function Header() {
           <h1 className="text-white">ARGOMENTI TRATTATI</h1>
         </div>
         <div className="flex h-full items-center content-center ">
-          <ul className="flex flex-col space-y-4 p-8 text-customGray  text-2xl font-bold">
+          <ul className="flex flex-col space-y-4 p-8 text-customGray text-center text-2xl font-bold">
             <ListItem
               icon={<FaArrowTrendUp />}
               text="Strutturare il Successo: Organigrammi, Mansionari e Procedure"

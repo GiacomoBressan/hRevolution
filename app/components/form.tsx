@@ -19,7 +19,7 @@ const ContactForm: React.FC = () => {
       body: JSON.stringify(data),
     });
 
-    const result = await res.json();
+    //const result = await res.json();
     if (res.ok) {
       alert("Email inviata con successo!");
     } else {
